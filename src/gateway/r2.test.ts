@@ -75,7 +75,7 @@ describe('mountR2Storage', () => {
       const result = await mountR2Storage(sandbox, env);
 
       expect(result).toBe(true);
-      expect(mountBucketMock).toHaveBeenCalledWith('moltbot-data', '/data/moltbot', {
+      expect(mountBucketMock).toHaveBeenCalledWith('claudbutt', '/data/moltbot', {
         endpoint: 'https://account123.r2.cloudflarestorage.com',
         credentials: {
           accessKeyId: 'key123',
